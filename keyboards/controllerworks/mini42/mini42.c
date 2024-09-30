@@ -20,6 +20,7 @@
 enum layer_names {
     _MAC,
     _WIN,
+    _QTY,
     _NUM,
     _SYM,
     _ADJ
@@ -54,6 +55,9 @@ bool render_status(void) {
             break;
         case _WIN:
             oled_write_P(PSTR("WIN\n"), false);
+            break;
+        case _QTY:
+            oled_write_P(PSTR("QTY\n"), false);
             break;
         case _NUM:
             oled_write_P(PSTR("NUM\n"), false);
